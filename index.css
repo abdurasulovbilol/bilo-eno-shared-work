@@ -1,0 +1,168 @@
+.nav-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  width: 500px;
+  height: 15px;
+  padding: 10px 7px;
+  font-size: 20px;
+  border-radius: 10px;
+  /* position: relative; */
+}
+
+button {
+  position: absolute;
+  width: 30px;
+  height: 38px;
+  padding: 5px 22px;
+  transition: 0.5s;
+  cursor: pointer;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+}
+
+.right-side a {
+  font-size: 30px;
+  margin: 0 14px;
+  color: black;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.right-side a:hover {
+  color: red;
+}
+
+/* header Part*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: black;
+  margin: 0;
+}
+header ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  background-color: black;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px;
+  color: white;
+  display: block;
+}
+
+header ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+header ul li ul {
+  position: absolute;
+  /* left: 0; */
+  width: 100px;
+  background: black;
+  padding: 0px;
+  display: none;
+}
+
+header ul li ul li {
+  width: 100%;
+}
+
+header ul li:focus-within > ul,
+header ul li:hover > ul {
+  display: initial;
+}
+
+@media (max-width: 1020px) {
+  input {
+    width: 400px;
+    height: 5px;
+  }
+  button {
+    width: 20px;
+    height: 28px;
+  }
+  .right-side a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  input {
+    width: 200px;
+    height: 5px;
+  }
+  button {
+    width: 20px;
+    height: 28px;
+  }
+  .right-side a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 690px) {
+  header ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .logo img {
+    width: 60px;
+  }
+  input {
+    width: 100px;
+    height: 5px;
+  }
+  button {
+    width: 20px;
+    height: 28px;
+  }
+  .right-side a {
+    font-size: 14px;
+  }
+
+  header ul li a {
+    font-size: 8px;
+  }
+}
